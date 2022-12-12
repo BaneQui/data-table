@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.">
+	<title>Data-table</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/modal.css">
+	<meta http-equiv="Content-type" content="text/html;charset=utf-8" />
+
+
+</head>
+<body>
+	<table id="myTable">
+		<tr>
+			<th>First name 
+				<div class="arrows">
+					<div class="arrow" onclick="sortTableUpwards(0)"><</div>
+					<div class="arrow" onclick="sortTableTopDown(0)">></div>
+				</div>
+			</th>
+			<th>Last name
+				<div class="arrows">
+					<div class="arrow" onclick="sortTableUpwards(1)"><</div>
+					<div class="arrow" onclick="sortTableTopDown(1)">></div>
+				</div>
+			</th>
+			<th>Email
+				<div class="arrows">
+					<div class="arrow" onclick="sortTableUpwards(2)"><</div>
+					<div class="arrow" onclick="sortTableTopDown(2)">></div>
+				</div>
+			</th>
+			<th>Phone number
+				<div class="arrows">
+					<div class="arrow" onclick="sortTableUpwards(3)"><</div>
+					<div class="arrow" onclick="sortTableTopDown(3)">></div>
+				</div>
+			</th>
+			<th>Send/delete</th>
+		</tr>
+		<tr>
+			<td>Leanne</td>
+			<td>Graham</td>
+			<td>Sincere@april.biz</td>
+			<td>1-770-736-8031 x56442</td>
+			<td class="img">
+				<a href="#" class="btn-primary" data-btn="send" data-id="${fruits.id}"><img src="img/envelope.png"></a>
+				<a href="#" class="btn-danger" data-btn="delete"><img src="img/cross.png"></a>
+			</td>
+		</tr>
+		<tr>
+			<td>Ervin</td>
+			<td>Howell</td>
+			<td>Shanna@melissa.tv</td>
+			<td>010-692-6593 x09125</td>
+			<td class="img">
+				<a href="#" class="btn-primary" data-btn="send"><img src="img/envelope.png"></a>
+				<a href="#" class="btn-danger" data-btn="delete"><img src="img/cross.png"></a>
+			</td>
+		</tr>
+		<tr>
+			<td>Clementine</td>
+			<td>Bauch</td>
+			<td>Nathan@yesenia.net</td>
+			<td>1-463-123-4447</td>
+			<td class="img">
+				<a href="#" class="btn-primary" data-btn="send"><img src="img/envelope.png"></a>
+				<a href="#" class="btn-danger" data-btn="delete"><img src="img/cross.png"></a>
+			</td>
+		</tr>
+		<tr>
+			<td>Patricia</td>
+			<td>Lebsack</td>
+			<td>Julianne.OConner@kory.org</td>
+			<td>493-170-9623 x156</td>
+			<td class="img">
+				<a href="#" class="btn-primary" data-btn="send"><img src="img/envelope.png"></a>
+				<a href="#" class="btn-danger" data-btn="delete"><img src="img/cross.png"></a>
+			</td>
+		</tr>
+		<tr>
+			<td>Chelsey</td>
+			<td>Dietrich</td>
+			<td>Lucio_Hettinger@annie.ca</td>
+			<td>(254)954-1289</td>
+			<td class="img">
+				<a href="#" class="btn-primary" data-btn="send"><img src="img/envelope.png"></a>
+				<a href="#" class="btn-danger" data-btn="delete"><img src="img/cross.png"></a>
+			</td>
+		</tr>
+		<tr>
+			<td>Dennis</td>
+			<td>Schulist</td>
+			<td>Karley_Dach@jasper.info</td>
+			<td>1-477-935-8478 x6430</td>
+			<td class="img">
+				<a href="#" class="btn-primary" data-btn="send"><img src="img/envelope.png"></a>
+				<a href="#" class="btn-danger" data-btn="delete"><img src="img/cross.png"></a>
+			</td>
+		</tr>
+		<tr>
+			<td>Kurtis</td>
+			<td>Weissnat</td>
+			<td>Telly.Hoeger@billy.biz</td>
+			<td>210.067.6132</td>
+			<td class="img">
+				<a href="#" class="btn-primary" data-btn="send"><img src="img/envelope.png"></a>
+				<a href="#" class="btn-danger" data-btn="delete"><img src="img/cross.png"></a>
+			</td>
+		</tr>
+		<tr>
+			<td>Nicholas</td>
+			<td>Runolfsdottir V</td>
+			<td>Sherwood@rosamond.me</td>
+			<td>586.493.6943 x140</td>
+			<td class="img">
+				<a href="#" class="btn-primary" data-btn="send"><img src="img/envelope.png"></a>
+				<a href="#" class="btn-danger" data-btn="delete"><img src="img/cross.png"></a>
+			</td>
+		</tr>
+		<tr>
+			<td>Glenna</td>
+			<td>Reichert</td>
+			<td>Chaim_McDermott@dana.io</td>
+			<td>(775)976-6794 x41206</td>
+			<td class="img">
+				<a href="#" class="btn-primary" data-btn="send"><img src="img/envelope.png"></a>
+				<a href="#" class="btn-danger" data-btn="delete"><img src="img/cross.png"></a>
+			</td>
+		</tr>
+		<tr>
+			<td>Clementina</td>
+			<td>DuBuque</td>
+			<td>Rey.Padberg@karina.biz</td>
+			<td>024-648-3804</td>
+			<td class="img">
+				<a href="#" class="btn-primary" data-btn="send"><img src="img/envelope.png"></a>
+				<a href="#" class="btn-danger" data-btn="delete"><img src="img/cross.png"></a>
+			</td>
+		</tr>
+	</table>
+
+
+	<script src="js/base.js"></script>
+	<script src="js/plugins/modal.js"></script>
+	<script src="js/index.js"></script>
+
+</body>
+</html>
